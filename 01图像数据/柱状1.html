@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>基本柱状图</title>
+</head>
+<body>
+  <div id="chart" style="width: 600px;height: 300px"></div>
+
+  <script src="../node_modules/flotr2/flotr2.min.js"></script>
+  <script>
+    var wins = [
+      [
+        [2006, 13],
+        [2007, 11],
+        [2008, 15],
+        [2009, 15],
+        [2010, 18],
+        [2011, 21],
+        [2012, 28],
+      ]
+    ]
+    var years = [
+      [0, "2006"],
+      [1, "2007"],
+      [2, "2008"],
+      [3, "2009"],
+      [4, "2010"],
+      [5, "2011"],
+      [6, "2012"]
+    ]
+
+    Flotr.draw(
+      document.getElementById('chart'),
+      wins,
+      {
+        title: 'Manchester City Wins',
+        colors: ['#89afd2'],
+        bars: {
+          show: true,
+          barWidth: 0.5,
+          shadowSize: 0,
+          fillOpacity: 1,
+          lineWidth: 0
+        },
+        yaxis: {
+          min: 0,
+          tickDecimals: 0
+        },
+        xaxis: {
+          ticks: years
+        }
+      }
+    )
+  </script>
+</body>
+</html>

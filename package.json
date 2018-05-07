@@ -1,0 +1,23 @@
+{
+  "name": "js-visualization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fridolph/js-visualization.git"
+  },
+  "keywords": [],
+  "author": "fridolph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fridolph/js-visualization/issues"
+  },
+  "homepage": "https://github.com/Fridolph/js-visualization#readme",
+  "dependencies": {
+    "flotr2": "^0.1.0"
+  }
+}

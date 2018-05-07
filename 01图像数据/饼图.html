@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>基本</title>
+</head>
+<body>
+  <div id="chart" style="width: 600px;height: 300px"></div>
+
+  <script src="../node_modules/flotr2/flotr2.js"></script>
+  <script>
+    var data = [
+      {
+        data: [[0, 22.4]],
+        label: 'Extreme Poverty'
+      },
+      {
+        data: [[1, 77.6]]
+      }
+    ]
+    Flotr.draw(document.getElementById('chart'), data, {
+      pie: {
+        show: true
+      },
+      yaxis: {
+        showLabel: false
+      },
+      xaxis: {
+        showLabels: false
+      },
+      grid: {
+        horizontalLines: false,
+        verticalLines: false
+      }
+    })
+  </script>
+</body>
+</html>
