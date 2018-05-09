@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>基本</title>
+</head>
+<body>
+  <div id="visualiation">
+    <div id="chart" style="width: 600px;height: 400px"></div>
+    <div id="controls" style="float: left">
+      <label><input type="checkbox">East Asia & Pacific</label>
+      <label><input type="checkbox">East Asia & Pacific</label>
+      <label><input type="checkbox">East Asia & Pacific</label>
+      <label><input type="checkbox">East Asia & Pacific</label>
+      <label><input type="checkbox">East Asia & Pacific</label>
+    </div>
+
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/flot/0.8.3/jquery.flot.js"></script>
+  <script>
+    var eas = [
+      [1960, 0.1558],
+      [1965, 0.2528],
+      [1970, 0.3288],
+      [1975, 0.3938],
+      [1980, 0.4400],
+    ]
+    var ecs = [
+      [1960, 0.4558],
+      [1965, 0.5528],
+      [1970, 0.5988],
+      [1975, 0.6238],
+      [1980, 0.7400],
+    ]
+    var lcn = [
+      [1960, 0.8158],
+      [1965, 0.8628],
+      [1970, 0.9088],
+      [1975, 0.9638],
+      [1980, 0.9900],
+    ]
+    var mea = [
+      [1960, 0.0375],
+      [1965, 0.0422],
+      [1970, 0.0478],
+      [1975, 0.0338],
+      [1980, 0.0540],
+    ]
+    var ssf = [
+      [1960, 0.0258],
+      [1965, 0.0328],
+      [1970, 0.0388],
+      [1975, 0.0438],
+      [1980, 0.0500],
+    ]
+
+    $(function() {
+      $.plot($('#chart'), [eas, ecs, lcn, mea, ssf])
+    })
+  </script>
+</body>
+</html>
